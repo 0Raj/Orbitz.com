@@ -49,6 +49,14 @@
             margin-top: 25px;
             height: 16px;
         }
+        .nav:hover{
+            cursor: pointer;
+            color: #008DA4;
+        }
+        #selectTag:hover{
+            cursor: pointer;
+            color: #008DA4;
+        }
     </style>
 </head>
 <body>
@@ -56,16 +64,16 @@
         <div id="navbar">
             <div id="leftDiv">
                 <img src="https://www.orbitz.com/_dms/header/logo.svg?locale=en_US&siteid=70201&2" alt="logo">
-                <select id="">
+                <select id="selectTag">
                     <option value="More Travel">More travel</option>
                 </select>
             </div>
             <div id="rightDiv">
-                <div>Español</div>
-                <div>List your property</div>
-                <div>Support</div>
-                <div>trips</div>
-                <div>Sign in</div>
+                <div class="nav">Español</div>
+                <div class="nav">List your property</div>
+                <div class="nav">Support</div>
+                <div class="nav">trips</div>
+                <div class="nav">Sign in</div>
             </div>
         </div>
     </div>
