@@ -469,7 +469,8 @@
     
 ];
 localStorage.setItem("data",JSON.stringify(hdata));
-createList(hdata);
+var locData = JSON.parse(localStorage.getItem("data"));
+createList(locData);
 function changeFunc(){
     var value = document.querySelector("#sortBy").value;
     if (value == "distance") {
@@ -484,16 +485,18 @@ function changeFunc(){
     }
     else if (value == "rating") {
       hdata.sort(function(a,b) {
-        return a.ratingNum-b.ratingNum;
+        return b.ratingNum-a.ratingNum;
      });
     }
-    else if (value == "recommended"){
+    else if (value == "recommended") {
       window.location.reload();
     }
     createList(hdata);
  }
-function createList(hdata){
-  hdata.map(function (elem) {
+ //createList(hdata);
+function createList(ata){
+  document.querySelector("#list").innerHTML="";
+  ata.map(function (elem) {
     var imgS = document.createElement("img");
     imgS.setAttribute("src", elem.imgSrc);
     imgS.style.width = "252px";
