@@ -1,192 +1,560 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <script src="https://kit.fontawesome.com/68f42f4dd5.js" crossorigin="anonymous"></script>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
-   <style>
-       body{
-          margin: 0px;
-          background-color: #F5F5F5;
-       }
-       #main{
-           width: 100%;
-           background-color: #00253C;
-           height: 75px;
-       }
-       #navbar{
-           display: flex;
-           flex-direction: row;
-           justify-content: space-between;
-           height: 75px;
-           color: white;
-           width: 90%;
-           margin: auto;
-       }
-       #rightDiv{
-          display: flex;
-          justify-content: space-around;
-          width: 35%;
+  <head>
+    <script
+      src="https://kit.fontawesome.com/68f42f4dd5.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0px;
+        background-color: #f5f5f5;
+      }
+      #main {
+        width: 100%;
+        background-color: #00253c;
+        height: 75px;
+      }
+      #navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 75px;
+        color: white;
+        width: 90%;
+        margin: auto;
+      }
+      #rightDiv {
+        display: flex;
+        justify-content: space-around;
+        width: 35%;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-size: 14px;
+        margin-top: 25px;
+        margin-left: 75px;
+      }
+      #leftDiv {
+        display: flex;
+        margin-top: 2px;
+        margin-right: 50px;
+        margin-left: 0px;
+      }
+      select {
+        background-color: #00253c;
+        border: 0px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        color: white;
+        font-size: 14px;
+        margin-left: 30px;
+        margin-top: 25px;
+        height: 16px;
+      }
+      #selectTag {
+        background-color: #00253c;
+        color: white;
+        margin-left: 40px;
+        font-size: 14px;
+        margin-top: 20px;
+      }
+      .nav:hover {
+        cursor: pointer;
+        color: #008da4;
+      }
+      #selectTag:hover {
+        cursor: pointer;
+        color: #008da4;
+      }
+      img {
+        cursor: pointer;
+      }
+      #container {
+        margin: 0px;
+        background-color: #f5f5f5;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 25% 60% 17%;
+        grid-gap: 14px;
+        margin: auto;
+      }
+      #left {
+        width: 94%;
+        height: 500px;
+      }
+      #right {
+        width: 93%;
+        height: 500px;
+      }
+      #map {
+        width: 256px;
+        height: 150px;
+        margin-left: 30px;
+        background-color: white;
+      }
+      #imgMap {
+        width: 256px;
+        height: 102px;
+        object-fit: cover;
+        /* margin-left: 50px; */
+      }
+      #view {
+        text-align: center;
+        margin-top: 10px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        color: #007e8f;
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration-line: none;
+      }
+      #search {
+        display: grid;
+        grid-template-columns: repeat(5, 200px);
+        grid-gap: 10px;
+        width: 70%;
+        height: 100px;
+        margin-left: 85px;
+      }
+      #search > div {
+        border: 1px solid black;
+        /* margin-right: 10px; */
+        background-color: #ffff;
+        height: 50%;
+        margin-top: 20px;
+      }
+      #searchProp {
+        margin-left: 30px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-size: 18px;
+        font-weight: 900;
+        border-top: 1px solid hsl(0, 0%, 79%);
+        border-bottom: 1px solid hsl(0, 0%, 79%);
+        padding: 15px 0px 23px;
+        margin-top: 30px;
+        color: #1f1f1f;
+      }
+      #inputDiv {
+        color: #616161;
+        border: 1px solid #616161;
+        background-color: #ffff;
+        width: 70%;
+        padding: 10px 65px 10px 10px;
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+      #location {
+        font-size: 11px;
+        padding: 6px 0px 6px 6px;
+        font-weight: 400;
+        font-style: normal;
+        background-color: white;
+        color: rgb(31, 31, 31);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        border: 2px solid black;
+        border-radius: 15px;
+        width: 35%;
+      }
+      #sDiv {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 12px;
+      }
+      #sort {
+        font-size: 14px;
+        letter-spacing: normal;
+        color: rgb(97, 97, 97);
+        background-color: #ffffff00;
+        font-weight: 700;
+        font-style: normal;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        text-align: start;
+      }
+      .select-wrap {
+        border: 1px solid #777;
+        margin-bottom: 0px;
+        padding-left: 5px;
+        padding-right: 20px;
+        background-color: white;
+      }
+      .select-wrap label {
+        font-size: 0.75rem;
+        font-weight: 400;
+        line-height: 1rem;
+        color: #616161;
+        margin-left: 0px;
+        margin-top: 0px;
+        background-color: white;
+      }
+      select {
+        font-size: 16px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-weight: 400;
+        background-color: rgb(255, 255, 255);
+        color: rgb(31, 31, 31);
+        margin-top: 0px;
+        margin-left: 0px;
+        height: 30px;
+      }
+      .mile{
+        font-size: 14px;
+        color: rgb(97, 97, 97);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 400;
+        margin-bottom: 85px;
+      }
+      h4{
+          margin-top: 10px;
+          margin-bottom: 2px;
+      }
+      .reserveDiv,.refundDiv{
+          color: #0e8445;
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          font-weight: 400;
           font-size: 14px;
-          margin-top: 25px;
-          margin-left: 75px;
-          /* border: 1px solid white; */
-       }
-       #leftDiv{
-           display: flex;
-           margin-top: 2px;
-           margin-right: 50px;
-           margin-left: 0px;
-       }
-       select{
-           background-color:#00253C;
-           border: 0px;
-           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-           color: white;
-           font-size: 14px;
-           margin-left: 30px;
-           margin-top: 25px;
-           height: 16px;
-       }
-       .nav:hover{
-           cursor: pointer;
-           color: #008DA4;
-       }
-       #selectTag:hover{
-           cursor: pointer;
-           color: #008DA4;
-       }
-       img{
-           cursor: pointer;
-       }
-       #container{
-           margin: 0px;
-           background-color: #F5F5F5;
-           width: 90%;
-           border:1px solid red;
-           display: grid;
-           grid-template-columns: 25% 60%;
-           margin: auto;
-       }
-       #left{
-           width: 94%;
-           border:1px solid red;
-           height: 500px;
-       }
-       #right{
-           width: 100%;
-           border:1px solid red;
-           height: 500px;
-       }
-       #map{
-           width: 256px;
-           height: 150px;
-           margin-left:30px;
-           background-color: white;
-       }
-       #imgMap{
-           width: 256px;
-           height: 102px;
-           object-fit: cover;
-           /* margin-left: 50px; */
-       }
-       #view{
-           text-align: center;
-           margin-top: 10px;
-           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-           color: #007E8F;
-           font-size: 14px;
-           font-weight: 500;
-           text-decoration-line: none;
-       }
-       #search{
-           display: grid;
-           grid-template-columns: repeat(5,200px);
-           grid-gap: 10px;
-           width: 70%;
-           height: 100px;
-           margin-left: 85px;
-       }
-       #search>div{
-           border: 1px solid black;
-           /* margin-right: 10px; */
-           background-color: #ffff;
-           height: 50%;
-           margin-top: 20px;
-       }
-       #searchProp{
-           margin-left:30px;
-           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-           font-size: 18px;
-           font-weight: 900;
-           border-top:1px solid hsl(0, 0%, 79%);
-           border-bottom:1px solid hsl(0, 0%, 79%);
-           padding: 15px 0px 23px;
-           margin-top: 30px;
-           color: #1F1F1F;
-       }
-       #inputDiv{
-           color: #616161;
-           border: 1px solid #616161;
-           background-color: #ffff;
-           width: 70%;
-           padding: 10px 65px 10px 10px;
-           font-size: 16px;
-           font-weight:400;
-           margin-top: 10px;
-           cursor: pointer;
-       }
-   </style>
-</head>
-<body>
-   <div id="main">
-       <div id="navbar">
-           <div id="leftDiv">
-               <img src="https://www.orbitz.com/_dms/header/logo.svg?locale=en_US&siteid=70201&2" alt="logo">
-               <select id="selectTag">
-                   <option value="More Travel">More travel</option>
-               </select>
-           </div>
-           <div id="rightDiv">
-               <div class="nav">Español</div>
-               <div class="nav">List your property</div>
-               <div class="nav">Support</div>
-               <div class="nav">trips</div>
-               <div class="nav">Sign in</div>
-           </div>
-       </div>
-   </div>
-   <div id="search">
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-   </div>
-   <div id="container">
-       <div id="left">
-           <div id="map">
-              <a href="https://goo.gl/maps/rDQdrFCP9hbswadb9">
-               <img id="imgMap" src="Screenshot.png" alt="">
-               <div id="view">View in map</div>
-              </a>
-           </div>
-           <div id="searchProp">
-               <div>Search by property name</div>
-               <!-- <input type="text" placeholder="e.g. Best Western"> -->
-               <div id="inputDiv">
-                   <i class="fas fa-search"></i>
-                   <span>e.g. Best Western</span>
-                   <!-- <span>e.g. Best Western</span> -->
-               </div>
-           </div>
-       </div>
-       <div id="right">
-           <div>Mumbai, India (BOM-Chhatrapati Shivaji Intl.)</div>
-       </div>
-   </div>
-</body>
+      }
+      .ratingDiv{
+        font-size: 14px;
+        color: rgb(97, 97, 97);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 400;
+        margin-top: 7px;
+        margin-bottom: 10px;
+      }
+      #rating{
+          color: black;
+          font-weight: bold;
+      }
+      #lastDiv{
+          display: block;
+          text-align: end;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 10px;
+            margin-top: 110px;
+            padding-top: 10px;
+            color:rgb(97, 97, 97);
+            margin-right: 10px;
+            padding-left: 10px;
+      }
+      #leftItem{
+          color: white;
+          background-color: #0E8445;
+          text-align: center;
+          font-size: 12px;
+          border-radius: 5px;
+          padding: 3.2px;
+          margin-bottom: 3px;
+      }
+      #lowerPriceTag{
+          color: black;
+          background-color: #00B1FF;
+          text-align: center;
+          font-size: 10.5px;
+          border-radius: 5px;
+          margin-bottom: 3px;
+          padding-top: 3.2px;
+          padding-bottom: 3.2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div id="navbar">
+        <div id="leftDiv">
+          <img
+            src="https://www.orbitz.com/_dms/header/logo.svg?locale=en_US&siteid=70201&2"
+            alt="logo"
+          />
+          <select id="selectTag">
+            <option value="More Travel">More travel</option>
+          </select>
+        </div>
+        <div id="rightDiv">
+          <div class="nav">Español</div>
+          <div class="nav">List your property</div>
+          <div class="nav">Support</div>
+          <div class="nav">trips</div>
+          <div class="nav">Sign in</div>
+        </div>
+      </div>
+    </div>
+    <div id="search">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div id="container">
+      <div id="left">
+        <div id="map">
+          <a href="https://goo.gl/maps/rDQdrFCP9hbswadb9">
+            <img id="imgMap" src="Screenshot.png" alt="" />
+            <div id="view">View in map</div>
+          </a>
+        </div>
+        <div id="searchProp">
+          <div>Search by property name</div>
+          <!-- <input type="text" placeholder="e.g. Best Western"> -->
+          <div id="inputDiv">
+            <i class="fas fa-search"></i>
+            <span>e.g. Best Western</span>
+            <!-- <span>e.g. Best Western</span> -->
+          </div>
+        </div>
+      </div>
+      <div id="right">
+        <div id="location">
+          Mumbai, India (BOM-Chhatrapati Shivaj... &nbsp &nbsp x
+        </div>
+        <div id="sDiv">
+          <div id="sort">
+            See how we pick our recommended properties
+            <i class="fas fa-info-circle"></i>
+          </div>
+          <div class="select-wrap">
+            <label>Sort by</label>
+            <select name="Sort by" style="width: 100%" onchange="changeFunc()" id="sortBy">
+              <option value="recommended">Recommended</option>
+              <option value="price">Price</option>
+              <option value="distance">Distance from airport</option>
+              <option value="rating">Star ratings</option>
+            </select>
+          </div>
+        </div>
+        <div id="list">
+
+        </div>
+      </div>
+      <div id="ad">
+        <img
+          src="https://tpc.googlesyndication.com/simgad/17193743292603108542"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
 </html>
+<script>
+  var hdata = [
+    {
+        imgSrc : "https://images.trvl-media.com/hotels/1000000/870000/860900/860842/a29095cb.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium",
+        hotelName : "JW Marriott Mumbai Juhu",
+        ratingNum: 4.4,
+        distance:3.09,
+        distanceWord:"mi from Chhatrapati Shivaji Intl. (BOM)",
+        ratingWord:"Excellent (650 reviews)",
+        refund:"Fully refundable",
+        reserve:"Reserve now, pay later",
+        price:114,
+        total:134,
+        night:"per night",
+        tax:"Includes taxes & fees",
+        left:"We have 5 left at",
+        discount: null,
+        lowerPrice : null
+    },
+    {
+        imgSrc : "https://images.trvl-media.com/hotels/10000000/9790000/9784600/9784580/2a61cd38.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium",
+        hotelName : "JW Marriott Mumbai Sahar",
+        ratingNum: 4.6,
+        distance: 0.29,
+        distanceWord:"mi from Chhatrapati Shivaji Intl. (BOM)",
+        ratingWord:"Wonderful (454 reviews)",
+        refund:"Fully refundable",
+        reserve:"Reserve now, pay later",
+        price:97,
+        total:114,
+        night:"per night",
+        tax:"Includes taxes & fees",
+        left:"We have 5 left at",
+        discount: null,
+        lowerPrice : null
+    },
+    {
+        imgSrc : "https://images.trvl-media.com/hotels/4000000/3450000/3447500/3447485/b6b155e8.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium",
+        hotelName : "Courtyard by Marriott Mumbai International Airport",
+        ratingNum: 4.3,
+        distance: 1.17,
+        distanceWord:"mi from Chhatrapati Shivaji Intl. (BOM)",
+        ratingWord:"Excellent (715 reviews)",
+        refund:"Fully refundable",
+        reserve:"Reserve now, pay later",
+        price:78,
+        total:87,
+        night:"per night",
+        tax:"Includes taxes & fees",
+        left:"We have 5 left at",
+        discount: null,
+        lowerPrice : null
+    },
+    {
+        imgSrc : "https://images.trvl-media.com/hotels/1000000/580000/577900/577808/2b755052.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium",
+        hotelName : "ITC Maratha Mumbai, a Luxury Collection Hotel, Mumbai",
+        ratingNum: 4.3,
+        distance: 0.39,
+        distanceWord:"mi from Chhatrapati Shivaji Intl. (BOM)",
+        ratingWord:"Excellent (428 reviews)",
+        refund:"Fully refundable",
+        reserve:"Reserve now, pay later",
+        price:94,
+        total:105,
+        night:"per night",
+        tax:"Includes taxes & fees",
+        left:"We have 5 left at",
+        discount: null,
+        lowerPrice : null
+    },
+    {
+        imgSrc : "https://images.trvl-media.com/hotels/2000000/1160000/1157500/1157448/14ad41c9.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium",
+        hotelName : "ITC Grand Central, a Luxury Collection Hotel, Mumbai",
+        ratingNum: 4.4,
+        distance: 7.34,
+        distanceWord:"mi from Chhatrapati Shivaji Intl. (BOM)",
+        ratingWord:"Excellent (548 reviews)",
+        refund:"Fully refundable",
+        reserve:"Reserve now, pay later",
+        price:121,
+        total:143,
+        night:"per night",
+        tax:"Includes taxes & fees",
+        left:"We have 5 left at",
+        discount: null,
+        lowerPrice : null
+    },
+    {
+        imgSrc : "https://images.trvl-media.com/hotels/2000000/1830000/1823800/1823707/2e002832.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium",
+        hotelName : "Trident Bandra Kurla Mumbai",
+        ratingNum: 4.5,
+        distance: 2.32,
+        distanceWord:"mi from Chhatrapati Shivaji Intl. (BOM)",
+        ratingWord:"Wonderful (665 reviews)",
+        refund:"Fully refundable",
+        reserve:"Reserve now, pay later",
+        price:141,
+        total:166,
+        night:"per night",
+        tax:"Includes taxes & fees",
+        left:null,
+        discount: null,
+        lowerPrice : "Lower price available"
+    },
+    {
+        imgSrc : "https://images.trvl-media.com/hotels/28000000/27290000/27286000/27285962/af37956d.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium",
+        hotelName : "Radisson Mumbai Andheri MIDC",
+        ratingNum: 4.2,
+        distance: 1.4,
+        distanceWord:"mi from Chhatrapati Shivaji Intl. (BOM)",
+        ratingWord:"Very good (97 reviews)",
+        refund:"Fully refundable",
+        reserve:"Reserve now, pay later",
+        price:112,
+        total:132,
+        night:"per night",
+        tax:"Includes taxes & fees",
+        left:null,
+        discount: null,
+        lowerPrice : "Lower price available",
+    },
+    
+];
+localStorage.setItem("data",JSON.stringify(hdata));
+createList(hdata);
+function changeFunc(){
+    var value = document.querySelector("#sortBy").value;
+    if (value == "distance") {
+      hdata.sort(function(a,b) {
+        return a.distance-b.distance;
+     });
+    }
+    else if (value == "price") {
+      hdata.sort(function(a,b) {
+        return a.price-b.price;
+     });
+    }
+    else if (value == "rating") {
+      hdata.sort(function(a,b) {
+        return a.ratingNum-b.ratingNum;
+     });
+    }
+    else if (value == "recommended"){
+      window.location.reload();
+    }
+    createList(hdata);
+ }
+function createList(hdata){
+  hdata.map(function (elem) {
+    var imgS = document.createElement("img");
+    imgS.setAttribute("src", elem.imgSrc);
+    imgS.style.width = "252px";
+    imgS.style.height = "214px";
+    var div1 = document.createElement("div");
+    div1.style.display = "grid";
+    div1.style.gridTemplateColumns = "252px 300px 120px";
+    div1.style.gridGap="5px";
+    var hDiv = document.createElement("div");
+    var hName = document.createElement("h4");
+    hName.textContent = elem.hotelName;
+    div1.style.backgroundColor = "white";
+    div1.style.margin = "10px 0px";
+    var mileDiv = document.createElement("div");
+    mileDiv.setAttribute("class","mile");
+    mileDiv.textContent = elem.distance+" "+elem.distanceWord;
+    var refundDiv = document.createElement("div");
+    refundDiv.setAttribute("class","refundDiv");
+    refundDiv.textContent = elem.refund;
+    var reserveDiv = document.createElement("div");
+    reserveDiv.setAttribute("class","reserveDiv");
+    reserveDiv.textContent = elem.reserve;
+    var ratingDiv = document.createElement("div");
+    ratingDiv.setAttribute("class","ratingDiv");
+    var rateSpan = document.createElement("span");
+    var wordSpan = document.createElement("span");
+    rateSpan.setAttribute("id","rating");
+    rateSpan.textContent = elem.ratingNum+"/5"+" ";
+    wordSpan.textContent = elem.ratingWord;
+    ratingDiv.append(rateSpan,wordSpan);
+    var lastDiv = document.createElement("div");
+    lastDiv.setAttribute("id","lastDiv");
+    var lowerPriceTag = document.createElement("div");
+    lowerPriceTag.setAttribute("id","lowerPriceTag");
+    lowerPriceTag.textContent = elem.lowerPrice;
+    var left = document.createElement("div");
+    left.setAttribute("id","leftItem");
+    left.textContent = elem.left;
+    var price = document.createElement("div");
+    price.style.fontSize = "18px"
+    price.style.color = "black"
+    price.style.fontWeight= "900";
+    price.textContent = "$"+elem.price;
+    var night = document.createElement("div");
+    night.textContent = elem.night;
+    var total = document.createElement("div");
+    total.style.fontWeight="600"
+    total.textContent = "$"+elem.total+" total";
+    var tax = document.createElement("div");
+    tax.textContent = elem.tax;
+    if(elem.lowerPrice == null) {
+        lastDiv.append(left,price,night,total,tax);
+    }
+    else {
+        lastDiv.append(lowerPriceTag,price,night,total,tax);
+    }
+    hDiv.append(hName,mileDiv,refundDiv,reserveDiv,ratingDiv);
+    div1.append(imgS, hDiv,lastDiv);
+    document.querySelector("#list").append(div1);
+  });
+  }
+
+ 
+</script>
