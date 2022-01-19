@@ -132,6 +132,90 @@
           height: 100%;
           margin: 20px;
       }
+      #R_img{
+          width: 350px;
+          height: 350px;
+          object-fit: cover;
+      }
+      #Rewards{
+          display: flex;
+          width: 60%;
+          margin: auto;
+          margin-top: 100px;
+          border: 1px solid rgb(128, 128, 128);
+      }
+     #Rdiv2{
+         margin: 0px 10px;
+     }
+     .flex{
+         display: flex;
+     }
+     .flex > div {
+         margin: 0px 10px;
+     }
+     .flex select {
+         padding: 10px;
+         font-size: 15px;
+     }
+     .flex input {
+         padding: 11px;
+     }
+     #barcode-img{
+         margin-top: 60px;
+         width: 160px;
+     }
+     #travel_main_div{
+         width: fit-content;
+         margin: auto;
+     }
+     #travel_main_div h1 {
+         margin-left: 20px;
+     }
+     #btn{
+         width: 150px;
+         height: 40px;
+         font-size: 15px;
+         padding: 0px 0px;
+         background-color: #c83258;
+         color: white;
+     }
+     .flex_div{
+         display: flex;
+        }
+        .flex_div option{
+            font-weight: bold;
+     }
+     .flex_div select {
+         padding: 15px 120px;
+     }
+     .flex_div div {
+         margin: 10px;
+     }
+     #more_destination{
+         width: fit-content;
+         margin: auto;
+     }
+     #footer{
+         display: flex;
+         width: fit-content;
+         margin: auto;
+         font-size: 20px;
+     }
+     .footer_div{
+         margin: 0px 70px;
+     }
+     #footer > div >img{
+         margin-top: 15px;
+     }
+     #copyright{
+         width: fit-content;
+         margin: auto;
+         text-align: center;
+         padding: 20px;
+     }
+     #copyright hr{
+
+     }
     </style>
 </head>
 <body>
@@ -230,6 +314,8 @@
             </div>
         </div>
 
+    <div id="travel_main_div" >
+        <h1>Traveling tips</h1>
         <div id="traveling">
             <div>
                 <img class="traveling_img" src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/18/ORB_Blog_NationalParks_imgB_1199x399_20211117.jpg" alt="">
@@ -238,15 +324,157 @@
                 <img class="traveling_img" src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/18/ORB_Blog_RoadTrips_imgB_1199x399_20211117.jpg" alt="">
             </div>
         </div>
+    </div>
 
         <div id="Rewards">
             <div id="Rimg" class="Rcont">
-                <img src="https://a.travel-assets.com/mad-service/footer/marquee/ORB_App_Footer_v1.jpg" alt="">
+                <img id="R_img" src="https://a.travel-assets.com/mad-service/footer/marquee/ORB_App_Footer_v1.jpg" alt="">
             </div>
+            <div id="Rdiv2" class="Rcont">
+                <div>
+                    <h1>Rewards are waiting for you in the orbit app</h1>
+                    <ul>
+                        <li>Earn 4% back when you book your hotel in app, vs 3% on site</li>
+                        <li>Get flight status and gate number notifications</li>
+                        <li>Have questions about your stay? Message your hotel right in the app</li>
+                    </ul>
+                </div>
+                    <h2>Text yourself a download link</h2>
+                    <div class="flex">
+                        <div> 
+                            <select>
+                                <option>India +91</option>
+                                <option>United Kingdom +44</option>
+                                <option>Hong Kong, SAR	+852</option>
+                                <option>Indonesia	+62</option>
+                                <option>Japan	+81</option>
+                                <option>Maldives	+960</option>
+                                <option>Mexico	+52</option>
+                             </select>
+                        </div>
+                        <div>
+                            <input type="number" placeholder="Phone number">
+                        </div>
+                        <div>
+                            <button id="btn">Get the app</button>
+                        </div>
+                    </div>
+                    <p>By providing your number, you agree to receive a one-time automated text message with a link to get the app. Standard text message rates may apply.</p>
+                </div>
+            <div class="Rcont">
+                <img id="barcode-img" src="https://a.travel-assets.com/mad-service/qr-code/portfolio_app_landing/qr_app_landing_footer_orbitz.png" alt="">
+                <p>Scan the QR code</p>
+            </div>
+        </div>
+
+        <div id="more_destination">
             <div>
-                <h1>Rewards are waiting for you in the orbit app</h1>
-                <p>.  Earn 4% back when you book your hotel in app, vs 3% on site </p>
+                <h1>More destination</h1>
             </div>
+            <div class="flex_div">
+                <div>
+                    <select>
+                        <option>Destination deal</option>
+                        <option>Destination deal</option>
+                        <option>Destination deal</option>
+                        <option>Destination deal</option>
+                    </select>
+                </div>
+                <div>
+                    <select>
+                        <option>Destination deal</option>
+                        <option>Destination deal</option>
+                        <option>Destination deal</option>
+                        <option>Destination deal</option>
+                    </select>
+                </div>
+                <div>
+                    <select>
+                        <option>Destination deal</option>
+                        <option>Destination deal</option>
+                        <option>Destination deal</option>
+                        <option>Destination deal</option>
+                    </select>
+                </div>
+            </div>
+            <div class="flex_div">
+                <div>
+                    <select>
+                        <option>Destination deal</option>
+                        <option>Destination deal</option>
+                        <option>Destination deal</option>
+                        <option>Destination deal</option>
+                    </select>
+                </div>
+                <div>
+                    <select>
+                        <option>Destination deal</option>
+                        <option>Destination deal</option>
+                        <option>Destination deal</option>
+                        <option>Destination deal</option>
+                    </select>
+                </div>
+                <div>
+                    <select>
+                        <option>Destination deal</option>
+                        <option>Destination deal</option>
+                        <option>Destination deal</option>
+                        <option>Destination deal</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div>
+                <img src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg" alt="">
+            </div>
+            <div class="footer_div">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+            </div>
+            <div class="footer_div">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+            </div>
+            <div class="footer_div">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+            </div>
+            <div class="footer_div">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="copyright">
+            <hr>
+            <p>© 2021 Orbitz, LLC, an Expedia Group Company. All rights reserved</p>
+            <p>Orbitz, Orbitz.com, and the Orbitz logo are trademarks or registered trademarks of Orbitz, LLC. CST# 2083930-50.</p>
         </div>
     </div>
 </body>
