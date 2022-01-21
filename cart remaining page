@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #two{
+            display: flex;
+        }
+        #three{
+            display: flex;
+        }
+        #two_div{
+            margin-top: 75px;
+            margin-left: 100px;
+        }
+        #three_div{
+            margin-top: 75px;
+            margin-left: 100px;
+        }
+        #right_text{
+            display: flex;
+        }
+        #right_distance{
+            margin-top: 50px;
+            margin-left: 60px;
+        }
+        #below{
+            display: flex;
+            padding: 10px;
+            border: 2px solid black;
+            width: 70rem;
+            font-size: 15px;
+        }
+        #left{
+            margin-right: 160px;
+            border: 2px solid black;
+            width: 600px;
+        }
+        #right{
+            margin-left: 160px;
+            border: 2px solid black;
+        }
+        #right > img {
+            width: 400px;
+            height: 250px;
+        }
+        #one > h1 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="below">
+        <div id="left">
+            <div id="one">
+                <h1>JW Marriott Mumbai Sahar</h1>
+                <h2>4.6/5 Wonderful</h2>
+                <p>Guests rated this property 4.7/5 for cleanliness.</p>
+                <a href="#">See all 454 reviews</a>
+            </div>
+            <div id="two">
+                <div>
+                    <h2>Popular amenities</h2>
+                    <p> <i class="fas fa-wifi"></i> Free WiFi</p>
+                    <p>Hot Tub</p>
+                    <p>Air conditioning</p>
+                    <a href="#">See all</a>
+                </div>
+                <div id="two_div">
+                    <p>Laundry</p>
+                    <p>Parking included</p>
+                    <p>Pool</p>
+                </div>
+            </div>
+            <div id="three">
+                <div>
+                    <h2>Cleaning and safety practices</h2>
+                    <p>Cleaned with disinfectant</p>
+                    <p>Hand sanitizer provided</p>
+                    <a href="#">See all</a>
+                </div>
+                <div id="three_div">
+                    <p>Social distancing</p>
+                </div>
+            </div>
+        </div>
+        <div id="right">
+            <img src="https://github.com/0Raj/Construct_week_1/blob/master/Screenshot.png?raw=true" alt="">
+            <p>IA Project Road, Chhatrapati Shivaji Intl Airport, Mumbai, Maharashtra, 400099</p>
+            <a href="https://www.google.com/maps/place/JW+Marriott+Mumbai+Sahar/@19.1025123,72.8760595,17z/data=!3m1!4b1!4m8!3m7!1s0x3be7c85bfc54069b:0xadd0d13590dc633!5m2!4m1!1i2!8m2!3d19.1025072!4d72.8782482" target="_blank">View in a map</a>
+            <div id="right_text">
+                <div>
+                    <h2>Explore the area</h2>
+                    <p>Mumbai (BOM-Chhatrapati Shivaji Intl.)</p>
+                    <p>MIDC Industrial Estate</p>
+                    <p>Phoenix Market City Mall</p>
+                    <p>Powai Lake</p>
+                </div>
+                <div id="right_distance">
+                    <p>1 min drive</p>
+                    <p>4 min drive</p>
+                    <p>4 min drive</p>
+                    <p>7 min drive</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
