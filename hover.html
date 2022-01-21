@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.drop {
+  color: blue;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  background-color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownB {
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdownB a {
+  color: blue;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdownB a:hover {background-color: rgb(238, 238, 248);}
+
+.dropdown:hover .dropdownB {display: block;}
+
+/* .dropdown:hover .dropbtn {background-color: rgb(209, 209, 253);} */
+</style>
+</head>
+<body>
+<div class="dropdown">
+  <button class="drop">More Travel</button>
+  <div class="dropdownB">
+    <a>Stay</a>
+    <a>flight</a>
+    <a>hotel</a>
+  </div>
+</div>
+
+</body>
+</html>
