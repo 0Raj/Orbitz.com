@@ -34,17 +34,22 @@
             margin: 20px;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
-        .FOimg{
-            width: 250px;
+        /* .FOimg1 ::before{ */
+            /* width: 250px;
             margin: 10px;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        }
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+        /* } */
         #FOimg2{
             width: 680px;
         }
         #Featured_offer{
             width: fit-content;
             margin: auto;
+        }
+        #Featured_offer div {
+            margin: 10px;
+            text-shadow: 2px 1px black;
+            font-size: 13px;
         }
         .O2img{
             width: 120px;
@@ -100,6 +105,25 @@
           /* border: 2px solid black; */
           margin: auto;
           margin-top: 50px;
+          background-image: url(https://forever.travel-assets.com/flex/flexmanager/images/2020/12/03/ORB_Storefront_Deals_2740x1484-V1.jpg);
+          background-size: cover;
+          background-position: center;
+          height: 240px;
+          color: white;
+          -webkit-box-shadow: inset -17px -41px 50px 6px #000000; 
+box-shadow: inset -17px -41px 50px 6px #000000;
+          text-shadow: 2px 2px black;
+          font-size: 13px;
+      }
+      #TTDdiv h2 {
+          position: relative;
+          top : 180px;
+          margin-left: 10px;
+        }
+        #TTDdiv p {
+          position: relative;
+          top : 170px;
+          margin-left: 10px;
       }
       #Textdiv{
           display: flex;
@@ -182,11 +206,19 @@
      .flex_div{
          display: flex;
         }
+        .flex_div select {
+            outline: none;
+            border: none;
+
+        }
         .flex_div option{
             font-weight: bold;
-     }
-     .flex_div select {
-         padding: 15px 120px;
+        }
+        .flex_div select {
+            font-weight: bold;
+            padding: 10px 3px;
+            width: 370px;
+            font-size: 18px;
      }
      .flex_div div {
          margin: 10px;
@@ -195,22 +227,26 @@
          width: fit-content;
          margin: auto;
      }
+     #more_destination h1 {
+         margin-left: 10px;
+     }
      #footer{
          display: flex;
          width: fit-content;
          margin: auto;
          font-size: 20px;
+         margin-top: 40px;
      }
      .footer_div{
          padding: 0px 20px;
-         margin: 0px 20px;
-         /* border: 2px black solid; */
+         margin: 0px 30px;
+         border: 0;
      }
      #footer > div >img{
          margin-top: 15px;
      }
      .footer_div li {
-         margin: 0px -35px;
+         margin: 0px -38px;
          margin-bottom: 10px;
          font-size: 5px;
          list-style-type: none;
@@ -222,7 +258,7 @@
         .footer_div a {
         text-decoration: none;
         color: #25b8b5;
-        font-size: 13px;
+        font-size: 12px;
         font-weight: 100;
 
      }
@@ -231,6 +267,81 @@
          margin: auto;
          text-align: center;
          padding: 20px;
+     }
+     .FOimg1{
+         background-image: url(https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_LastMinute_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh);
+         width: 255px;
+         height: 200px;
+         background-size: cover;
+         color: white;
+     }
+     .FOimg1 h2{
+         margin-top: 140px;
+        }
+        .FOimg1 p{
+            margin-left: 10px;
+        }
+
+     .FOimg2{
+         background-image: url(https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_AllInclusive_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh);
+         width: 255px;
+         height: 200px;
+         background-size: cover;
+         color: white;
+         /* vertical-align: text-bottom; */
+        }
+    
+        .FOimg2 h2{
+         margin-top: 140px;
+        }
+        .FOimg2 p{
+            margin-left: 10px;
+        }
+     .FOimg3{
+         background-image: url(https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_MOD_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh);
+         width: 255px;
+         height: 200px;
+         background-size: cover;
+         color: white;
+     }
+     .FOimg3 h2{
+         margin-top: 140px;
+        }
+        .FOimg3 p{
+            margin-left: 10px;
+        }
+     .FOimg4{
+         background-image: url(https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_JetAndReset_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh);
+         width: 255px;
+         height: 200px;
+         background-size: cover;
+         color: white;   
+     }
+     .FOimg4 h2{
+         margin-top: 140px;
+        }
+        .FOimg4 p{
+            margin-left: 10px;
+        }
+     #FOdivflex{
+        display: flex;
+    }
+    #FOdivflex > h2,p{
+         bottom: 1px;
+     }
+     #Vacationimg{
+         background-image: url(https://forever.travel-assets.com/flex/flexmanager/images/2020/12/02/ORB_Storefront_BigMarquee_MODwithrewards_1124x480_V5.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh);
+         background-size: cover;
+         width: 700px;
+         height: 280px;
+     }
+     #vacatext{
+         background-color: white;
+         margin-top: 230px;
+         padding-left: 15px;
+         padding-top: 1px;
+         height: 65px;
+         font-size: 13px;
      }
     </style>
 </head>
@@ -270,18 +381,41 @@
             <img class="imgbelow" src="https://forever.travel-assets.com/flex/flexmanager/images/2021/04/01/ORB_BrandPromise_IGLTA_imgB_840x473_20210330.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh" alt="">
         </div>
 
+
         <div id="Featured_offer">
             <h1>Featured offer</h1>
-            <img class="FOimg" src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_LastMinute_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh" alt="">
-            <img class="FOimg" src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_AllInclusive_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh" alt="">
+            <div id="FOdivflex">
+                <div class="FOimg1">
+                        <h2>Last-minute deals</h2>
+                        <p>Getaway today</p>
+                </div>
+                <div class="FOimg2">
+                    <h2>All-inclusive resort</h2>
+                    <p>Enjoy sun and fun</p>
+                </div>
+                <div class="FOimg3">
+                    <h2>Insider Price</h2>
+                    <p>Members get rewarded</p>
+                </div>
+                <div class="FOimg4">
+                    <h2>Jet and reset</h2>
+                    <p>Fly south for the winter</p>
+                </div>
+            </div>
+            <!-- <img class="FOimg" src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_LastMinute_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh" alt=""> -->
+            <!-- <img class="FOimg" src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_AllInclusive_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh" alt="">
             <img class="FOimg" src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_MOD_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh" alt="">
-            <img class="FOimg" src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_JetAndReset_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh" alt="">
+            <img class="FOimg" src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_JetAndReset_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh" alt=""> -->
         </div>
 
         <div id="Offer2"> 
 
-            <div>
-                <img id="FOimg2" src="https://forever.travel-assets.com/flex/flexmanager/images/2020/12/02/ORB_Storefront_BigMarquee_MODwithrewards_1124x480_V5.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh" alt="">
+            <div id="Vacationimg">
+                <div id="vacatext">
+                    <h2>Members save more</h2>
+                    <p>Sign in to get access insider price, get amazing disconts on hotels around the world</p>
+                </div>
+                <!-- <img id="FOimg2" src="https://forever.travel-assets.com/flex/flexmanager/images/2020/12/02/ORB_Storefront_BigMarquee_MODwithrewards_1124x480_V5.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh" alt=""> -->
             </div>
 
             <div>
@@ -307,7 +441,9 @@
         </div>
 
         <div id="TTDdiv">
-            <img id="TTDimg" src="https://forever.travel-assets.com/flex/flexmanager/images/2020/12/03/ORB_Storefront_Deals_2740x1484-V1.jpg" alt="">
+            <h2>Today's top deals</h2>
+            <p>Vacations are even more rewarding with our best offer</p>
+            <!-- <img id="TTDimg" src="https://forever.travel-assets.com/flex/flexmanager/images/2020/12/03/ORB_Storefront_Deals_2740x1484-V1.jpg" alt=""> -->
         </div>
         
         <div class="H1text">
@@ -334,7 +470,10 @@
         <h1>Traveling tips</h1>
         <div id="traveling">
             <div>
-                <img class="traveling_img" src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/18/ORB_Blog_NationalParks_imgB_1199x399_20211117.jpg" alt="">
+                <h1>National Parks</h1>
+                <p>There's plenty to keep you busy</p>
+                <p>Learn more</p>
+                <!-- <img class="traveling_img" src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/18/ORB_Blog_NationalParks_imgB_1199x399_20211117.jpg" alt=""> -->
             </div>
             <div>
                 <img class="traveling_img" src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/18/ORB_Blog_RoadTrips_imgB_1199x399_20211117.jpg" alt="">
@@ -398,7 +537,7 @@
                 </div>
                 <div>
                     <select>
-                        <option>Destination deal</option>
+                        <option>Top hotel beach destinations</option>
                         <option>Destination deal</option>
                         <option>Destination deal</option>
                         <option>Destination deal</option>
@@ -406,7 +545,7 @@
                 </div>
                 <div>
                     <select>
-                        <option>Destination deal</option>
+                        <option>Top hotel city destinations</option>
                         <option>Destination deal</option>
                         <option>Destination deal</option>
                         <option>Destination deal</option>
@@ -416,15 +555,7 @@
             <div class="flex_div">
                 <div>
                     <select>
-                        <option>Destination deal</option>
-                        <option>Destination deal</option>
-                        <option>Destination deal</option>
-                        <option>Destination deal</option>
-                    </select>
-                </div>
-                <div>
-                    <select>
-                        <option>Destination deal</option>
+                        <option>Top vacation destination</option>
                         <option>Destination deal</option>
                         <option>Destination deal</option>
                         <option>Destination deal</option>
@@ -432,7 +563,15 @@
                 </div>
                 <div>
                     <select>
+                        <option>Top flight destination</option>
                         <option>Destination deal</option>
+                        <option>Destination deal</option>
+                        <option>Destination deal</option>
+                    </select>
+                </div>
+                <div>
+                    <select>
+                        <option>Top car rental destination in America</option>
                         <option>Destination deal</option>
                         <option>Destination deal</option>
                         <option>Destination deal</option>
