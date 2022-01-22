@@ -1,0 +1,460 @@
+body{
+    margin: 0;
+    background-color: #f5f5f5;
+}
+.container{
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+}
+#navbar{
+    background-color: #01253d;
+    padding: 18px;
+    display: flex;
+    justify-content: space-around;
+}
+#rightnav{
+    display: flex;
+    color: white;
+}#rightnav > div {
+    margin-right: 20px;
+    font-size: 14px;
+    margin-top: 8px;
+}
+.imgbelow{
+    width: 330px;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/* .FOimg1 ::before{ */
+    /* width: 250px;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+/* } */
+#FOimg2{
+    width: 680px;
+}
+#Featured_offer{
+    width: fit-content;
+    margin: auto;
+}
+#Featured_offer h1 {
+    margin-left: 20px;
+}
+#Featured_offer div {
+    margin: 10px;
+    text-shadow: 2px 1px black;
+    font-size: 13px;
+}
+.O2img{
+    width: 120px;
+    height: 130px;
+    margin-right: 13px;
+}
+#Offer2{
+    display: flex;
+    width: fit-content;
+    margin: auto;
+}
+#belowimg{
+    width: fit-content;
+    margin: auto;
+}
+#leftnav > select {
+    border: none;
+    background-color: #01253d;
+    color: white;
+    margin-left: 30px;
+    font-size: 15px;
+}
+#leftnav > img {
+    width: 130px;
+    cursor: pointer;
+}
+#leftnav > select > option {
+    background-color: white;
+    color:black;
+}
+#bgimg{
+    height: 500px;
+    width: 100%;
+    object-fit: none;
+    object-position: bottom;
+}
+#TTDimg{
+    height: 280px;
+    width: 100%;
+    object-fit: cover;
+    /* object-position:  right; */
+    /* object-position: 100px top; */
+}
+.offer_img_div{
+  display: flex;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-left: 10px;
+  width: 380px;
+  margin-bottom: 23px;
+}
+#TTDdiv{
+  width: 60%;
+  /* border: 2px solid black; */
+  margin: auto;
+  margin-top: 50px;
+  background-image: url(https://forever.travel-assets.com/flex/flexmanager/images/2020/12/03/ORB_Storefront_Deals_2740x1484-V1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 240px;
+  color: white;
+  -webkit-box-shadow: inset -17px -41px 50px 6px #000000; 
+box-shadow: inset -17px -41px 50px 6px #000000;
+  text-shadow: 2px 2px black;
+  font-size: 13px;
+}
+#TTDdiv h2 {
+  position: relative;
+  top : 180px;
+  margin-left: 10px;
+}
+#TTDdiv p {
+  position: relative;
+  top : 170px;
+  margin-left: 10px;
+}
+#Textdiv{
+  display: flex;
+  width: fit-content;
+  margin: auto;
+}
+.H1text{
+  width: 60%;
+  margin: auto;
+  padding: 0;
+  margin-bottom: 0;
+}
+.Text{
+  margin: 0px 10px 0px 30px; 
+  padding: 0px 50px 0px 0px;
+  border: 1px solid rgb(107, 107, 107);
+  border-radius: 5px;
+}
+.Text > p,h2{
+  margin: 10px;
+}
+#traveling{
+  width: max-content;
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+}
+.traveling_img{
+  width: 550px;
+  height: 100%;
+  margin: 20px;
+}
+#R_img{
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+#Rewards{
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-top: 100px;
+  background-color: white;
+  border: 1px solid rgb(128, 128, 128);
+}
+#Rdiv2{
+ margin: 0px 10px;
+}
+.rightnavtext:hover{
+color: rgb(0, 164, 187);
+cursor: pointer;
+}
+.flex{
+ display: flex;
+}
+.flex > div {
+ margin: 0px 10px;
+}
+.flex select {
+ padding: 10px;
+ font-size: 15px;
+}
+.flex input {
+ padding: 11px;
+}
+#barcode-img{
+ margin-top: 60px;
+ width: 160px;
+}
+#travel_main_div{
+ width: fit-content;
+ margin: auto;
+}
+#travel_main_div h1 {
+ margin-left: 20px;
+}
+#btn{
+ width: 150px;
+ height: 40px;
+ font-size: 15px;
+ padding: 0px 0px;
+ background-color: #c83258;
+ color: white;
+}
+.flex_div{
+ display: flex;
+}
+.flex_div select {
+    outline: none;
+    border: none;
+
+}
+.flex_div option{
+    font-weight: bold;
+}
+.flex_div select {
+    font-weight: bold;
+    padding: 10px 3px;
+    width: 370px;
+    font-size: 18px;
+}
+.flex_div div {
+ margin: 10px;
+}
+#more_destination{
+ width: fit-content;
+ margin: auto;
+}
+#more_destination h1 {
+ margin-left: 10px;
+}
+#footer{
+ display: flex;
+ width: fit-content;
+ margin: auto;
+ font-size: 20px;
+ margin-top: 40px;
+}
+.footer_div{
+ padding: 0px 20px;
+ margin: 0px 30px;
+ border: 0;
+}
+#footer > div >img{
+ margin-top: 15px;
+}
+.footer_div li {
+ margin: 0px -38px;
+ margin-bottom: 10px;
+ font-size: 5px;
+ list-style-type: none;
+}
+.footer_div h3{
+    font-size: 13px;
+    margin-bottom: 0;
+}
+.footer_div a {
+text-decoration: none;
+color: #25b8b5;
+font-size: 12px;
+font-weight: 100;
+
+}
+#copyright{
+ width: fit-content;
+ margin: auto;
+ text-align: center;
+ padding: 20px;
+}
+.FOimg1{
+ background-image: url(https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_LastMinute_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh);
+ width: 255px;
+ height: 200px;
+ background-size: cover;
+ color: white;
+}
+.FOimg1 h2{
+ margin-top: 140px;
+}
+.FOimg1 p{
+    margin-left: 10px;
+}
+
+.FOimg2{
+ background-image: url(https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_AllInclusive_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh);
+ width: 255px;
+ height: 200px;
+ background-size: cover;
+ color: white;
+ /* vertical-align: text-bottom; */
+}
+
+.FOimg2 h2{
+ margin-top: 140px;
+}
+.FOimg2 p{
+    margin-left: 10px;
+}
+.FOimg3{
+ background-image: url(https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_MOD_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh);
+ width: 255px;
+ height: 200px;
+ background-size: cover;
+ color: white;
+}
+.FOimg3 h2{
+ margin-top: 140px;
+}
+.FOimg3 p{
+    margin-left: 10px;
+}
+.FOimg4{
+ background-image: url(https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_JetAndReset_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh);
+ width: 255px;
+ height: 200px;
+ background-size: cover;
+ color: white;   
+}
+.FOimg4 h2{
+ margin-top: 140px;
+}
+.FOimg4 p{
+    margin-left: 10px;
+}
+#FOdivflex{
+display: flex;
+}
+#FOdivflex > h2,p{
+ bottom: 1px;
+}
+#Vacationimg{
+ background-image: url(https://forever.travel-assets.com/flex/flexmanager/images/2020/12/02/ORB_Storefront_BigMarquee_MODwithrewards_1124x480_V5.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh);
+ background-size: cover;
+ width: 700px;
+ height: 280px;
+}
+#vacatext{
+ background-color: white;
+ margin-top: 230px;
+ padding-left: 15px;
+ padding-top: 1px;
+ height: 65px;
+ font-size: 13px;
+}
+#fcontainer {
+width: 1200px;
+height: 250px;
+padding: 5px;
+margin: auto;
+background-color: white;
+top: 60px;
+position: relative;
+/* background-image: url(https://forever.travel-assets.com/flex/flexmanager/images/2022/01/06/ORB_JanuarySale_imgB_1920x1440_20220106.jpg); */
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#fcontainer > div:nth-child(1) {
+display: flex;
+height: 50px;
+width: 500px;
+margin-left: 400px;
+/* border: 1px solid red; */
+justify-content: space-between;
+}
+.hoverEff:hover{
+    cursor: pointer;
+    color: teal;
+}
+#fcontainer > div > {
+margin-left: 50px;
+}
+#fcontainer > div > input {
+height: 40px;
+}
+#fcontainer>button{
+  height: 50px;
+  width: 150px;
+  background-color: rgb(200,50,89);
+  color: white;
+  margin-left: 500px;
+  font-size: 17px;
+}
+#fcontainer > div>span{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+
+
+}
+#fcontainer > div>span{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+}
+#searchdiv{
+    height: 500px;
+    background-image: url(https://forever.travel-assets.com/flex/flexmanager/images/2022/01/06/ORB_JanuarySale_imgB_1920x1440_20220106.jpg);
+    background-size: cover;
+    background-position: bottom;
+    /* padding-top: 80px; */
+}
+#TTimg1 {
+    height: 240px;
+    background-size: cover;
+    width: 550px;
+    background-image: url(https://forever.travel-assets.com/flex/flexmanager/images/2021/11/18/ORB_Blog_NationalParks_imgB_1199x399_20211117.jpg);
+    margin-right: 20px;
+    background-color: rgb(75, 75, 75);
+    color: white;
+    background-blend-mode:overlay;
+}
+#TTimg2{
+    color: white;
+    margin-left: 20px;
+    height: 240px;
+    background-size: cover;
+    width: 550px;
+    background-image: url(https://forever.travel-assets.com/flex/flexmanager/images/2021/11/18/ORB_Blog_RoadTrips_imgB_1199x399_20211117.jpg);
+    background-color: rgb(75, 75, 75);
+    background-blend-mode:overlay;
+}
+.Pbtn{
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: white;
+    color: rgb(88, 143, 161);
+    font-size: 15px;
+    font-weight: bolder;
+}
+.Pbtn:hover{
+    background-color: rgb(198, 241, 255);
+    color: rgb(0, 0, 0);
+}
+.black p{
+    margin-left: 20px;
+    margin-bottom: 3px;
+}
+.black h1{
+    margin-bottom: 0;
+}
+.black {
+    margin-top: 50px;
+}
+#navtext{
+    position: absolute  ;
+    top: 380px;
+    left: 70px;
+    font-size: 16px;
+    color: white;
+}
+#nbtn{
+    margin-top: 0;
+    padding: 10px 20px;
+    background-color: white;
+    display: inline-block;
+    color: rgb(42, 93, 110);
+}
+#nbtn:hover{
+    background-color: rgb(202, 221, 228);
+    color: black;
+    cursor: pointer;
+}

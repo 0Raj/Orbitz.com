@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/CSS Files/login.css">
+    <meta charset="UTF-8">
+    <link rel = "icon" href = "/Website Screen Shots/pngegg.png" type = "image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+<body>
+    <div id="imge">
+        <img alt="Orbitz" class="logo" src="https://www.orbitz.com/_dms/interstitial/logo.svg?locale=en_US&amp;siteid=70201">
+    </div>
+
+    <div id="login">
+        <p class="text">Sign in</p>
+        <form class="boxes">
+            <div class="input1">
+                <input id="box1" type="text" placeholder="Email address" />
+            </div>
+            <div class="input">
+                <input id="box2" type="password" placeholder="Password" />
+                <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;" onclick="showpassword()"></i>
+            </div>
+            <div id="keepmesignin">
+                <input type="checkbox" id="vehicle1" value="signin">
+                <label for="signin"> Keep me signed in</label><br>
+            </div>
+            <div class="links">
+                <p>Selecting this checkbox will keep you signed into your account on this device until you sign out. Do not select this on shared devices.</a>
+                    <p>By signing in, I agree to the Orbitz <a href="https://www.orbitz.com/lp/lg-terms">Terms and Conditions </a>,<a href="https:https://www.orbitz.com/lp/lg-privacy">Privacy Statement </a> and <a href="https://www.orbitz.com/rewards/terms?pwaLob=wizard-hotel-pwa-v2">Orbitz Rewards Terms and Conditions</a>.</p>
+            </div>
+            <button id="submit" type="submit">Sign in</button>
+        </form>
+        <div id="fLinks">
+            <a href="forgotpassword.html">Forgot password?</a>
+            <p>Don't have an account? <a href="createAccount.html"> Create one </a></p>
+        </div>
+    </div>
+</body>
+</html>
+<script src="/JavaScript Files/login.js">
+    
+</script>
