@@ -1,4 +1,4 @@
-# [Orbitz-Hotel-Deals](https://github.com/0Raj/Orbitz-Hotel-Deals)
+# [Orbitz-Hotel-Deals](https://github.com/0Raj/Construct_week_1)
 
 <table>
 <tr>
@@ -38,8 +38,8 @@ Want to run in your local Machine? Great!
 
 To run, follow these steps:
 
-- Clone my repository `https://github.com/0Raj/Orbitz-Hotel-Deals`
-- Open that code in your VS code `Front end/groww_home.html`
+- Clone my repository `https://github.com/0Raj/Construct_week_1`
+- Open that code in your VS code `Mark-up files/landingPage.html`
 - Open the `landingPage.html` on Live server
 - Initialise the server `node server.js` on terminal
 - Then you can Navigate through other pages from Home page like `loginPage.html`, `createAccount.html` etc
