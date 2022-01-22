@@ -11,23 +11,23 @@ Orbitz.com is a travel fare aggregator website and travel metasearch engine. The
 
 ## Orbitz-Hotel-Deals Clone
 
-### Sign up Page
-![]()
+### Create Account Page
+![](https://github.com/0Raj/Construct_week_1/blob/1235d96fea121a6ca45dbd635fe8758c89bf7d75/Website%20Screen%20Shots/Create-an-account.png)
 
 ### Home Page
-![]()
+![](https://github.com/0Raj/Construct_week_1/blob/1235d96fea121a6ca45dbd635fe8758c89bf7d75/Website%20Screen%20Shots/homePage.png)
 
-### Product Page
-![]()
+### Hotel Listing Page
+![](https://github.com/0Raj/Construct_week_1/blob/1235d96fea121a6ca45dbd635fe8758c89bf7d75/Website%20Screen%20Shots/hotelList.png)
 
-### Product Description Page
-![]()
+### Flight Listing Page
+![](https://github.com/0Raj/Construct_week_1/blob/d0aa8e4e4d6f5390ad40537dae4f894f193c325a/Website%20Screen%20Shots/flights.png)
 
-### Checkout Page
-![]()
+### Room Listing Page
+![](https://github.com/0Raj/Construct_week_1/blob/d0aa8e4e4d6f5390ad40537dae4f894f193c325a/Website%20Screen%20Shots/roomList.png)
 
 ### Payment Page
-![]()
+![](https://github.com/0Raj/Construct_week_1/blob/d0aa8e4e4d6f5390ad40537dae4f894f193c325a/Website%20Screen%20Shots/Payment-Page.png)
 
 
 
