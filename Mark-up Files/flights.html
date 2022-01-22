@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel = "icon" href = "/Website Screen Shots/pngegg.png" type = "image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DEL to BOM flights</title>
+    <script src="https://kit.fontawesome.com/fa650845c0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/CSS Files/flights.css">
+  </head>
+  <body>
+    <div id="main">
+      <div id="navbar">
+          <div id="leftDiv">
+              <img  id="logo"  style="height: 30px; margin-top: 20px;" src="https://www.orbitz.com/_dms/header/logo.svg?locale=en_US&siteid=70201&2" alt="logo">
+              <select id="selectTag">
+                  <option value="More Travel">More travel</option>
+              </select>
+          </div>
+          <div id="rightDiv">
+              <div class="nav">Español</div>
+              <div class="nav">List your property</div>
+              <div class="nav">Support</div>
+              <div class="nav">trips</div>
+              <div class="nav" id="mainSIn">Sign in</div>
+          </div>
+      </div>
+  </div>
+
+  <div id="flatbox">
+    <div style="width: 600px;height: 20px; margin-left: 40px;margin-top: 10px;">
+      <select style="margin-top: 0px;">
+        <option value="">One way</option>
+        <option >Round trip  </option>
+        <option >One way  </option>
+        <option >Multi-city  </option>
+      </select>
+      <select style="margin-top: 0px;">
+        <option value="">1 Traveller</option>
+        <option >Adults  </option>
+        <option >Children  </option>
+        <option >Infants  </option>
+      </select>
+      <select style="margin-top: 0px;">
+        <option value="">Economy</option>
+        <option >Premium </option>
+        <option >business class</option>
+        <option >first class</option>
+      </select>
+      <select style="margin-top: 0px;">
+        <option value="">Airlines</option>
+        <option >Aegean</option>
+        <option >Air India</option>
+        <option >Air Algeria</option>
+      </select>
+      <select style="margin-top: 0px;">
+        <option value="">More Options</option>
+        <option >Refundable</option>
+        <option >Nonstop</option>
+      
+      </select>
+    </div>
+    <div style="margin-top: 10px;">
+      <div style="margin-left: 10px;padding-left: 20px;padding-right: 20px;">
+        <i class="fas fa-map-marker-alt" style="display: inline;margin-top: 10px;"></i>
+        <div style="display: inline; margin-left: 10px;" >
+          <p style="display: inline;font-size: 13px;">Flying from</p>
+          <p style="margin-left: 20px;">Delhi (DEL- Indhira Gandhi Intl.) </p>
+
+        </div>
+       
+       
+      </div>
+      <i class="fas fa-exchange-alt" style="padding-top: 15px; margin-left: 30px;"></i>
+
+      <div style="margin-left: 30px;padding-left: 20px;padding-right: 20px;">
+        <i class="fas fa-map-marker-alt" style="display: inline;margin-top: 10px;"></i>
+        <div style="display: inline; margin-left: 10px;" >
+          <p style="display: inline;font-size: 13px;">flying To</p>
+          <p style="margin-left: 20px;">Mumbai (BOM- Chatrapati Sivaji....) </p>
+
+        </div>
+       
+      </div>
+      
+      <div style="padding-left: 20px;padding-right: 70px;margin-left: 30px;">
+        <p style=" font-size: 13px;">Departing</p>
+        <p>Jan 31</p>
+      </div>
+      
+      <div>
+      
+        <button style="width:100px;height: 100%; background-color: rgb(200,50,89); color: white;font-size: 16px;font-weight: bold;margin-left: 30px;">Search</button>
+      </div>
+    </div>
+
+  </div>
+  <p style="font-style: 14px;font-weight: bold ;margin-left: 380px;margin-top: 50px;">Choose departing flight >></p>
+  <div id="day" style="margin-top: 20px;">
+    <div>
+      <p>Sunday, Jan 30</p>
+      <p style="font-size: 16px; color: rgb(79,194,234) ;" >Search</p>
+    </div>
+    <div>
+      <p>Monday, Jan 31</p>
+      <p style="font-size: 16px; color: rgb(79,194,234) ;">Search</p>
+    </div>
+    <div>
+      <p>Tuesday, Feb 1</p>
+      <p style="font-size: 16px; color: rgb(79,194,234) ;">Search</p>
+    </div>
+    <div>
+      <p>Wed, Feb 2</p>
+      <p style="font-size: 16px; color: rgb(79,194,234) ;">Search</p>
+    </div>
+    <div>
+      <p>Thusday, Feb 3</p>
+      <p style="font-size: 16px; color: rgb(79,194,234) ;">Search</p>
+    </div>
+    <div>
+      <p>Friday, Feb 4</p>
+      <p style="font-size: 16px; color: rgb(79,194,234) ;">Search</p>
+    </div>
+    <div>
+      <p>Saturday, Feb </p>
+      <p style="font-size: 16px; color: rgb(79,194,234) ;">Search</p>
+    </div>
+  </div>
+  <hr style="width: 750px; margin-left: 380px;margin-top: 20px;">
+  <div id="sortpricediv">
+    <p style=>Prices display inclucing taxes and may change on availablity. You can reveiw any adition fees<br> before checkout.
+      Prices are not fonal until you checkout. </p>
+     <select id="sortPrice" onchange="sortPrice()" style="border: 1px solid rgb(139, 130, 130); display :inline">
+       <option value="">Sort by price</option>
+       <option value="low">price (lowest)</option>
+       <option value="high">price (Higest)</option>
+     </select>
+  </div>
+  
+    <div id="container">
+      <div id="first">
+        <h3>Filter By</h3>
+        <p>Stops</p>
+
+        <div>
+          <input
+            type="checkbox"
+            id="check"
+            style="width: 20px; height: 20px"
+            value="(Nonstop)"
+            onchange="filter()"
+          />
+          <p>Non Stop (3)</p>
+          <p style="margin-left: 100px;">$123</p>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="check1"
+            style="width: 20px; height: 20px"
+            value="(1 stop)"
+            onchange="filter1()"
+          />
+          <p>1 Stop (3)</p>
+          <p style="margin-left: 110px;">$123</p>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="check2"
+            style="width: 20px; height: 20px"
+            value="(2 stop)"
+            onchange="filter2()"
+          />
+          <p>2 Stop (2)</p>
+          <p style="margin-left: 110px;">$123</p>
+        </div>
+        <br>
+        <br>
+        <div style="font-size: 15px;font-weight: bold;font-family: sans-serif;">Departure time in New Delhi</div>
+        <div class="below">
+          <div><i class="fas fa-sun"></i><br>
+            <p style="font-size: 10px;">Early Morning</p>
+            <p style="font-size: 10px;">(12.00 am- 5.00 am)</p></div>
+          <div><i class="fas fa-cloud-sun"></i><br><p style="font-size: 10px;">Morning</p>
+            <p style="font-size: 10px;">(5.00 am- 12.00 pm)</p></div>
+          <div><i class="fas fa-cloud-sun-rain"></i><br><p style="font-size: 10px;">Afternoon</p>
+            <p style="font-size: 10px;">(12.00 pm- 4.00 pm)</p></div>
+          <div><i class="fas fa-moon"></i><br><p style="font-size: 10px;">Evening</p>
+            <p style="font-size: 10px;">(4.00 pm- 11.59 pm)</p></div>
+
+        </div>
+        <br>
+        <div style="font-size: 15px;font-weight: bold;font-family: sans-serif;">Arrival time in Mumbai</div>
+        <div class="below">
+          <div><i class="fas fa-sun"></i><br>
+            <p style="font-size: 10px;">Early Morning</p>
+            <p style="font-size: 10px;">(12.00 am- 5.00 am)</p></div>
+          <div><i class="fas fa-cloud-sun"></i><br><p style="font-size: 10px;">Morning</p>
+            <p style="font-size: 10px;">(5.00 am- 12.00 pm)</p></div>
+          <div><i class="fas fa-cloud-sun-rain"></i><br><p style="font-size: 10px;">Afternoon</p>
+            <p style="font-size: 10px;">(12.00 pm- 4.00 pm)</p></div>
+          <div><i class="fas fa-moon"></i><br><p style="font-size: 10px;">Evening</p>
+            <p style="font-size: 10px;">(4.00 pm- 11.59 pm)</p></div>
+
+
+        </div>
+      </div>
+      <div id="second">
+       
+      </div>
+    </div>
+    <img style="margin-left: 380px;" src="https://tpc.googlesyndication.com/simgad/9183180126342177979?">
+    <div id="Rewards">
+      <div id="Rimg" class="Rcont">
+          <img id="R_img" src="https://a.travel-assets.com/mad-service/footer/marquee/ORB_App_Footer_v1.jpg" alt="">
+      </div>
+      <div id="Rdiv2" class="Rcont">
+          <div>
+              <h1>Rewards are waiting for you in the orbit app</h1>
+              <ul>
+                  <li>Earn 4% back when you book your hotel in app, vs 3% on site</li>
+                  <li>Get flight status and gate number notifications</li>
+                  <li>Have questions about your stay? Message your hotel right in the app</li>
+              </ul>
+          </div>
+              <h2>Text yourself a download link</h2>
+              <div class="flex">
+                  <div> 
+                      <select style="height: 40px;width: 150px;">
+                          <option>India +91</option>
+                          <option>United Kingdom +44</option>
+                          <option>Hong Kong, SAR	+852</option>
+                          <option>Indonesia	+62</option>
+                          <option>Japan	+81</option>
+                          <option>Maldives	+960</option>
+                          <option>Mexico	+52</option>
+                       </select>
+                  </div>
+                  <div>
+                      <input type="number" placeholder="Phone number">
+                  </div>
+                  <div>
+                      <button id="btn">Get the app</button>
+                  </div>
+              </div>
+              <p>By providing your number, you agree to receive a one-time automated text message with a link to get the app. Standard text message rates may apply.</p>
+          </div>
+      <div class="Rcont">
+          <img id="barcode-img" src="https://a.travel-assets.com/mad-service/qr-code/portfolio_app_landing/qr_app_landing_footer_orbitz.png" alt="">
+          <p>Scan the QR code</p>
+      </div>
+  </div>
+    <div id="footer">
+        <div>
+            <img src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg" alt="">
+        </div>
+        
+        <div class="footer_div">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Job</a></li>
+                <li><a href="">List your property</a></li>
+                <li><a href="">Partnerships</a></li>
+                <li><a href="">Newsroom</a></li>
+                <li><a href="">Investor Relations</a></li>
+                <li><a href="">Site Map</a></li>
+                <li><a href="">Orbitz Rewards</a></li>
+                <li><a href="">Advertising</a></li>
+            </ul>
+        </div>
+        <div class="footer_div">
+            <h3>Explore</h3>
+            <ul>
+                <li><a href="">Hotels in United States</a></li>
+                <li><a href="">Vacation Rentals in United States</a></li>
+                <li><a href="">Car Rentals in United States</a></li>
+                <li><a href="">Domestic Flights</a></li>
+                <li><a href="">Vacation Packages in United States</a></li>
+                <li><a href="">Vacation Packages in United States</a></li>
+                <li><a href="">Vacation Packages in United States</a></li>
+                <li><a href="">Orbitz Reviews</a></li>
+                <li><a href="">Orbitz Coupons</a></li>
+                <li><a href="">LGBTQ Travel</a></li>
+                <li><a href="">Unique Accommodations</a></li>
+                <li><a href="">Travel Blog</a></li>
+            </ul>
+        </div>
+        <div class="footer_div">
+            <h3>Policies</h3>
+            <ul>
+                <li><a href="">Privacy Policies</a></li>
+                <li><a href="">Terms of Use</a></li>
+                <li><a href="">Orbitz Rewards Terms</a></li>
+                <li><a href="">Do not sell my personal information</a></li>
+            </ul>
+        </div>
+        <div class="footer_div">
+            <h3>Help</h3>
+            <ul>
+                <li><a href="">Support</a></li>
+                <li><a href="">Cancel your hotel or vacation rental booking</a></li>
+                <li><a href="">Cancel your flight</a></li>
+                <li><a href="">Refund timelines, policies & processes</a></li>
+                <li><a href="">Use an Orbitz Coupon</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="copyright">
+      <hr>
+      <p>© 2021 Orbitz, LLC, an Expedia Group Company. All rights reserved</p>
+      <p>Orbitz, Orbitz.com, and the Orbitz logo are trademarks or registered trademarks of Orbitz, LLC. CST# 2083930-50.</p>
+  </div>
+  </body>
+</html>
+<script src="/JavaScript Files/flights.js">
+ 
+</script>

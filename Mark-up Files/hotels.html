@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/CSS Files/foot.css">
+    <script
+      src="https://kit.fontawesome.com/68f42f4dd5.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <link rel = "icon" href = "pngegg.png" type = "image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mumbai, India (BOM-Chhatrapati Shivaj...</title>
+    <link rel="stylesheet" href="/CSS Files/hotel.css">
+    
+  </head>
+  <body>
+    <div id="main">
+      <div id="navbar">
+        <div id="leftDiv">
+          <img 
+            src="https://www.orbitz.com/_dms/header/logo.svg?locale=en_US&siteid=70201&2"
+            alt="logo"
+          />
+          <select id="selectTag">
+            <option value="More Travel">More travel</option>
+          </select>
+        </div>
+        <div id="rightDiv">
+          <div class="nav">Español</div>
+          <div class="nav">List your property</div>
+          <div class="nav">Support</div>
+          <div class="nav">trips</div>
+          <div class="nav" id="mainOut">Sign Out</div>
+        </div>
+      </div>
+    </div>
+    <div id="searchContainer">
+      <div class="search-wrap">
+          <label class="fas fa-map-marker-alt"> Going to</label>
+          <select name="Sort by" style="width: 100%" id="searchBy">
+            <option value="Mumbai">Mumbai, India (BOM-Chhatrapati Shivaj...</option>
+          </select>
+        </div>
+        <div class="search-wrap">
+          <label class="far fa-calendar-check"> Check-in</label>
+          <div style="width: 100%"  class="dateD">
+            <input type="date" placeholder="Feb 2">
+          </div>
+        </div>
+        <div class="search-wrap">
+          <label class="far fa-calendar-check"> Check-out</label>
+          <div style="width: 100%" class="dateD">
+            <input type="date" placeholder="Feb 2">
+          </div>
+        </div>
+        <div id="searchBar">
+            <div>Search</div>
+        </div>
+  </div>
+    <div id="container">
+      <div id="left">
+        <div id="map">
+          <a href="https://goo.gl/maps/rDQdrFCP9hbswadb9">
+            <img id="imgMap" src="https://c1.10times.com/map/venue/4079.png" alt="" />
+            <div id="view">View in map</div>
+          </a>
+        </div>
+        <div id="searchProp">
+          <div>Search by property name</div>
+          <!-- <input type="text" placeholder="e.g. Best Western"> -->
+          <div id="inputDiv">
+            <input type="text" placeholder="e.g. Best Western">
+            <i id="inputSearch" class="fas fa-search"></i>
+            <!-- <span>e.g. Best Western</span> -->
+          </div>
+        </div>
+        <div id="fiterOption">
+          <div class="heading">Filter by</div>
+          <div class="subheading"> <i class="fas fa-chevron-up"></i> &nbsp; Popular filters</div>
+          <div id="filOptions">
+             <span><input type="checkbox" value="freeAirport"> Free Airport Shuttle</span>
+             <span><input type="checkbox" value="allinclusive"> All Inclusive</span>
+             <span><input type="checkbox" value="Powai"> Powai</span>
+             <span><input type="checkbox" value="freeWifi"> Free Wifi</span>
+             <span><input type="checkbox" value="lunch"> Lunch Included</span>
+          </div>
+          <div class="subheading" > <i class="fas fa-chevron-up"></i> &nbsp; Your budget</div>
+          <div id="filOptions">
+             <span><input type="checkbox" value="75"> Less than $75</span>
+             <span><input type="checkbox" value="125"> $75 to $125</span>
+             <span><input type="checkbox" value="200"> $125 to $200</span>
+             <span><input type="checkbox" value="300"> $200 to $300</span>
+             <span><input type="checkbox" value="301"> Greater than $300</span>
+          </div>
+          <div class="subheading" > <i class="fas fa-chevron-up"></i> &nbsp; Guest rating</div>
+          <div id="filOptions">
+             <span><input type="radio" value="75"> Any</span>
+             <span><input type="radio" value="125"> Wonderful 4.5+</span>
+             <span><input type="radio" value="200"> Very good 4+ </span>
+             <span><input type="radio" value="300"> Good 3.5+</span>
+          </div>
+          <div class="subheading" > <i class="fas fa-chevron-down"></i></i> &nbsp; Cleaning and safety practices</div>
+          <div class="subheading" > <i class="fas fa-chevron-down"></i></i> &nbsp; Payment type</div>
+          <div class="subheading" > <i class="fas fa-chevron-down"></i></i> &nbsp; Property type</div>
+          <div class="subheading" > <i class="fas fa-chevron-down"></i></i> &nbsp; Traveler experience</div>
+          <div class="subheading" > <i class="fas fa-chevron-down"></i></i> &nbsp; Neighborhood</div>
+          <div class="subheading" > <i class="fas fa-chevron-down"></i></i> &nbsp; Popular locations</div>
+          <div class="subheading" > <i class="fas fa-chevron-down"></i></i> &nbsp; Meal plans available</div>
+          <div class="subheading" > <i class="fas fa-chevron-down"></i></i> &nbsp; Amenities</div>
+          <div class="subheading" > <i class="fas fa-chevron-down"></i></i> &nbsp; Orbitz Rewards</div>
+          <div class="subheading" > <i class="fas fa-chevron-down"></i></i> &nbsp; Accessibility</div>
+        </div>
+      </div>
+      <div id="right">
+        <div id="location">
+          Mumbai, India (BOM-Chhatrapati Shivaj... &nbsp &nbsp x
+        </div>
+        <div id="sDiv">
+          <div id="sort">
+            See how we pick our recommended properties
+            <i class="fas fa-info-circle"></i>
+          </div>
+          <div class="select-wrap">
+            <label>Sort by</label>
+            <select name="Sort by" style="width: 100%" onchange="changeFunc()" id="sortBy">
+              <option value="recommended">Recommended</option>
+              <option value="price">Price</option>
+              <option value="distance">Distance from airport</option>
+              <option value="rating">Star ratings</option>
+            </select>
+          </div>
+        </div>
+        <div id="list">
+
+        </div>
+       
+        
+      </div>
+      <div id="ad">
+        <img
+          src="https://tpc.googlesyndication.com/simgad/17193743292603108542"
+          alt=""
+        />
+      </div>
+    </div>
+    
+  </body>
+  <footer>
+    <div id="beforeFoot">
+      <img src="https://tpc.googlesyndication.com/simgad/4639453849983244456" alt="ad">
+      <div>Tell us how we can improve our site</div>
+      <button id="feedBack">Share Feedback</button>
+    </div>
+    <div id="footer">
+      <div>
+          <img src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg" alt="">
+      </div>
+      <div class="footer_div">
+          <h3>Company</h3>
+          <ul>
+              <li><a href="">About</a></li>
+              <li><a href="">Job</a></li>
+              <li><a href="">List your property</a></li>
+              <li><a href="">Partnerships</a></li>
+              <li><a href="">Newsroom</a></li>
+              <li><a href="">Investor Relations</a></li>
+              <li><a href="">Site Map</a></li>
+              <li><a href="">Orbitz Rewards</a></li>
+              <li><a href="">Advertising</a></li>
+          </ul>
+      </div>
+      <div class="footer_div">
+          <h3>Explore</h3>
+          <ul>
+              <li><a href="">Hotels in United States</a></li>
+              <li><a href="">Vacation Rentals in United States</a></li>
+              <li><a href="">Car Rentals in United States</a></li>
+              <li><a href="">Domestic Flights</a></li>
+              <li><a href="">Vacation Packages in United States</a></li>
+              <li><a href="">Vacation Packages in United States</a></li>
+              <li><a href="">Vacation Packages in United States</a></li>
+              <li><a href="">Orbitz Reviews</a></li>
+              <li><a href="">Orbitz Coupons</a></li>
+              <li><a href="">LGBTQ Travel</a></li>
+              <li><a href="">Unique Accommodations</a></li>
+              <li><a href="">Travel Blog</a></li>
+          </ul>
+      </div>
+      <div class="footer_div">
+          <h3>Policies</h3>
+          <ul>
+              <li><a href="">Privacy Policies</a></li>
+              <li><a href="">Terms of Use</a></li>
+              <li><a href="">Orbitz Rewards Terms</a></li>
+              <li><a href="">Do not sell my personal information</a></li>
+          </ul>
+      </div>
+      <div class="footer_div">
+          <h3>Help</h3>
+          <ul>
+              <li><a href="">Support</a></li>
+              <li><a href="">Cancel your hotel or vacation rental booking</a></li>
+              <li><a href="">Cancel your flight</a></li>
+              <li><a href="">Refund timelines, policies & processes</a></li>
+              <li><a href="">Use an Orbitz Coupon</a></li>
+          </ul>
+      </div>
+  </div>
+  <hr>
+  <div id="copyright">
+   <div>© 2021 Orbitz, LLC, an Expedia Group Company. All rights reserved</div>
+   <div style="margin-top: 10px;">Orbitz, Orbitz.com, and the Orbitz logo are trademarks or registered trademarks of Orbitz, LLC. CST# 2083930-50.</div>
+  </div> 
+  </footer>
+</html>
+<script src="/JavaScript Files/hotels.js"></script>
+
