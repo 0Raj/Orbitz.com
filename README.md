@@ -56,4 +56,5 @@ To run, follow these steps:
 - [@Rohan Tiwari](https://github.com/ROHAN3110)
 - [@Anannya Sharma](https://github.com/Anannyasharma17)
 - [@Sudhir Bhargav](https://github.com/sudhirbhargav)
-- [@praneeth516](https://github.com/praneeth516)
+- [@praneeth](https://github.com/praneeth516)
+- [@Shubham Singh](https://github.com/shubfire)
