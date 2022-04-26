@@ -1,4 +1,4 @@
-# [Orbitz-Hotel-Deals](https://github.com/0Raj/Construct_week_1)
+# [Orbitz-Hotel-Deals](https://orbitsz.netlify.app)
 
 <table>
 <tr>
